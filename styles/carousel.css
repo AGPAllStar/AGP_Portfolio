@@ -1,0 +1,44 @@
+.carousel {
+    position: relative;
+    max-width: 60%;
+    margin: 2rem auto;
+    background-color: #000;
+}
+
+.carousel-images img {
+    display: none;
+    width: 100%;
+    max-width: 100%;
+}
+
+.carousel-images img.active {
+    display: block;
+}
+
+/* Botones */
+.carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(64, 0, 255);
+    color: aliceblue;
+    border: none;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: 0.125em solid #000030;
+    border-radius: 0.5em;
+}
+
+.carousel .prev {
+    left: 0;
+}
+
+.carousel .next {
+    right: 0;
+}
+
+.carousel button:hover {
+    background-color: aliceblue;
+    color: rgb(64, 0, 255);
+}

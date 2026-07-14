@@ -1,0 +1,35 @@
+body {
+    background-color: #000030;
+    color: aliceblue;
+}
+
+main {
+    gap: 1em;
+    text-align: center;
+    align-items: center;
+    margin: 2em;
+}
+
+article {
+    margin: 1em;
+}
+
+aside {
+    text-align: left;
+    background-color: #00b291;
+    color: #000030;
+    border: 0.125em solid aliceblue;
+    border-radius: 1em;
+    padding: 1em;
+    box-shadow: 0 1em 2em rgba(0,0,0,0.1);
+}
+
+section {
+    text-align: justify;
+}
+
+img {
+    max-width: 80%;
+    width: auto;
+    height: auto;
+}

@@ -1,0 +1,23 @@
+footer {
+    background-color: rgb(6, 0, 26);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    width: 100%;
+    padding: 1em;
+}
+
+footer img{
+    max-width: 3em;
+    width: auto;
+    height: auto;
+}
+
+footer img:hover{
+    transform:scale(1.2, 1.2);
+}
+
+footer p {
+    font-size: large;
+}
