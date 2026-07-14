@@ -1,23 +1,25 @@
 footer {
-    background-color: rgb(6, 0, 26);
+    background-color: rgba(0, 0, 0, 0);
+    bottom: 0;
+    right: 0;
     display: flex;
+    position: fixed;
     justify-content: center;
-    align-items: center;
-    gap: 5em;
-    width: 100%;
+    gap: 1em;
     padding: 1em;
+    flex-direction: column;
+    z-index: 1000;
 }
 
 footer img{
+    background-color: rgb(255, 255, 255);
     max-width: 3em;
+    border: 0.1em;
+    border-radius: 3em;
     width: auto;
     height: auto;
 }
 
 footer img:hover{
-    transform:scale(1.2, 1.2);
-}
-
-footer p {
-    font-size: large;
+    transform: scale(1.2, 1.2);
 }

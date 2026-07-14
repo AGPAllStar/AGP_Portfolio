@@ -7,28 +7,56 @@
     <meta name="description" content="Esta página describe el juego Splash On Contact" />
     <meta name="keywords" content="splash, contact, velocidad" />
     <title>Splash On Contact</title>
+    <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/game.css">
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/carousel.css">
 </head>
 <body>
 
+<header>
+    <nav>
+        <a href="../index.html">Inicio</a>
+        <a href="../media/docs/cv.pdf">CV</a>
+    </nav>
+</header>
+
 <main>
+
     <article>
-        <img src="../img/SOC_header.png" alt="Splash On Contact Portada">
+        <div class="carousel">
+            <button class="prev">◀</button>
+
+            <div class="carousel-media">
+                <video autoplay muted playsinline controls class="active">
+                    <source src="../media/video/SOC_reel.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de vídeo.
+                </video>
+                <img src="../media/img/SOC_shot1.png" alt="Imagen 1 de Splash on Contact">
+                <img src="../media/img/SOC_shot2.png"  alt="Imagen 2 de Splash on Contact">
+                <img src="../media/img/SOC_shot3.png"  alt="Imagen 3 de Splash on Contact">
+                <img src="../media/img/SOC_shot4.png"  alt="Imagen 4 de Splash on Contact">
+                <img src="../media/img/SOC_shot5.png"  alt="Imagen 5 de Splash on Contact">
+            </div>
+
+            <button class="next">▶</button>
+        </div>
+        <script src="../logic/carousel.js"></script>
     </article>
 
     <aside>
-        <h2>Splash On Contact</h2>
+        <h1>Splash On Contact</h1>
         <ul>
             <li><b>Géneros:</b> Acción-aventura</li>
             <li><b>Motor gráfico:</b> Unreal Engine 5.4</li>
             <li><b>Labores desempeñadas:</b> Programación, System Design, Level Design, Game Design</li>
+            <li><b>Enlace:</b> <a href="https://agpallstar.itch.io/splash-on-contact">Splash on Contact</a></li>
         </ul>
     </aside>
 
     <section>
-        <h3>Descripción</h3>
+        <h2>Descripción del juego</h2>
         <p>
             Este es un juego de acción-aventura donde el jugador controla a un Goteao llamado Splash que acompaña a un Fertilizao llamado Splinter.
             Durante su travesía, habrá una tribu de Fogosos que tratará de acabar con Splinter y el deber del jugador será protegerlo.
@@ -45,34 +73,66 @@
         </p>
     </section>
 
-    <div class="carousel">
-        <button class="prev">◀</button>
+    <section>
+        <h2>Labores desempeñadas</h2>
 
-        <div class="carousel-images">
-            <img src="../img/SOC_shot1.png" class="active">
-            <img src="../img/SOC_shot2.png">
-            <img src="../img/SOC_shot3.png">
-        </div>
+        <h3>Lead programmer</h3>
+        <p>
+            Me encargué de coordinar el equipo de programación del juego, definiendo y asignando las tareas necesarias para la programación del juego.
+        </p>
 
-        <button class="next">▶</button>
-    </div>
-    <script src="../logic/carousel.js"></script>
+        <h3>Sistema de actividades</h3>
+        <p>
+            Elaboré un sistema que permite cambiar el contexto de juego de forma dinámica dentro de un mismo nivel de Unreal Engine. Para ello, englobé todos los 
+            diferentes contextos de juego como batallas o diálogos en objetos llamados actividades. Cada actividad se gestiona por sí misma, definiendo las reglas
+            que aplican, las acciones que el jugador puede hacer y la información que mostrar en pantalla. El modo de juego se encarga de cambiar la actividad vigente 
+            y de guardar la referencia a dicha actividad.
+        </p>
+        <p>
+            Las batallas se gestionan por oleadas, en las que aparecen una serie de enemigos en diferentes puntos de la sala. Por cada enemigo que deba aparecer se 
+            guarda el tipo de enemigo, el tiempo que tardaría en aparecer desde que la oleada comienza y el punto exacto en el que aparecería. Hasta que el jugador no 
+            elimine a todos los enemigos de una oleada, no se pasaría a la siguiente. La batalla finalizaría cuando finalizase la última oleada.
+        </p>
+        <p>
+            Los diálogos se gestionan por líneas de diálogo, que muestran el mensaje que emite el emisor en la conversación entre los interlocutores. En el diálogo
+            se muestran los sprites de 2 interlocutores, entre ellos, el emisor de la línea de diálogo actual.
+        </p>
+
+        <h3>Diseño de nivel</h3>
+        <p>
+            He realizado el diseño del nivel que se muestra en la demo publicada del juego. El nivel se compone de varias salas interconectadas que el jugador debe 
+            explorar para encontrar el final del nivel y llevar a Splinter a salvo hasta allí.
+        </p>
+        <p>
+            Este se trata de un nivel introductorio que busca enseñar al jugador las mecánicas principales presentes en el juego e introducir el contexto de la 
+            historia del juego. Con la composición de las salas del nivel se buscaba que fuese accesible para jugadores novatos y atractiva para jugadores experimentados.
+        </p>
+
+        <h3>Diseño de niveles</h3>
+        <p>
+            He realizado el diseño del nivel que se muestra en la demo publicada del juego. El nivel se compone de varias salas interconectadas que el jugador debe 
+            explorar para encontrar el final del nivel y llevar a Splinter a salvo hasta allí.
+        </p>
+        <p>
+            Este se trata de un nivel introductorio que busca enseñar al jugador las mecánicas principales presentes en el juego e introducir el contexto de la 
+            historia del juego. Con la composición de las salas del nivel se buscaba que fuese accesible para jugadores novatos y atractiva para jugadores experimentados.
+        </p>
+
+        <h3>Testing</h3>
+        <p>
+            He elaborado herramientas que han servido para tratar de asegurar la calidad del juego. Por un lado, he creado un modo debug que permite visualizar 
+            en mitad del juego todas las características de los personajes principales y las colisiones de los elementos que componen el mapa. Por el otro, se 
+            ha creado una forma de registrar en fichero las partidas de los jugadores para posteriormente ser analizadas. Esto con el objetivo de ver aspectos 
+            mejorables del nivel.
+        </p>
+    </section>
 
 </main>
 
 <footer>
-    <nav>
-        <a href="../index.html">Inicio</a>
-    </nav>
-    <p>
-        Mis redes: 
-    </p>
-    <p>
-        <a href="https://es.linkedin.com/in/álvaro-garcía-peña-060b25382"><img src="../img/linkedin_logo.png" alt="Logo de Linkedin"></a>
-    </p>
-    <p>
-        <a href="https://agpallstar.itch.io"><img src="../img/itchio_logo.png" alt="Logo de itch.io"></a>
-    </p>
+    <a href="https://es.linkedin.com/in/álvaro-garcía-peña-060b25382"><img src="../media/img/linkedin_logo.png" alt="Logo de Linkedin"></a>
+    <a href="https://agpallstar.itch.io"><img src="../media/img/itchio_logo.png" alt="Logo de itch.io"></a>
+    <a href="https://github.com/AGPAllStar"><img src="../media/img/github_logo.png" alt="Logo de Github"></a>
 </footer>
 
 </body>

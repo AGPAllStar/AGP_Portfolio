@@ -1,0 +1,36 @@
+header {
+    background-color: #000030;
+    top: 0;
+    width: 100%;
+    height: 3%;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    gap: 1em;
+    padding: 1em;
+    flex-direction: row;
+    z-index: 1000;
+}
+
+header a {
+    background-color: rgb(64, 0, 255);
+    color: aliceblue;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font: larger;
+    text-align: center;
+    margin: 5em;
+    border: 0.25em solid aliceblue;
+    border-radius: 5em;
+}
+
+header a:hover {
+    background: #54ffff;
+    color: #000030;
+}
+
+main {
+    margin-top: 5%;
+}

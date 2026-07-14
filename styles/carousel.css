@@ -1,17 +1,17 @@
 .carousel {
     position: relative;
-    max-width: 60%;
+    max-width: 100%;
     margin: 2rem auto;
     background-color: #000;
 }
 
-.carousel-images img {
+.carousel-media img, .carousel-media video {
     display: none;
     width: 100%;
     max-width: 100%;
 }
 
-.carousel-images img.active {
+.carousel-media img.active, .carousel-media video.active {
     display: block;
 }
 
