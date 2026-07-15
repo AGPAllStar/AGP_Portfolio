@@ -13,6 +13,7 @@ header {
 }
 
 header a {
+    text-decoration: none;
     background-color: rgb(64, 0, 255);
     color: aliceblue;
     padding-left: 1em;

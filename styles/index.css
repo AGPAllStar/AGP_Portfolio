@@ -4,6 +4,11 @@ section nav {
     gap: 2em;
 }
 
+section nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
 section nav a article {
     background: #00b291;
     color: aliceblue;
@@ -29,4 +34,29 @@ section nav a article img {
 
 section nav a article p {
     font-size: larger;
+}
+
+h1 {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+    padding: 2rem;
+
+    font-size: xx-large;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+h2{
+    color: #000030;
+    background: aliceblue;
+    padding: 1rem;
+    box-shadow: 0 0 0 100vmax aliceblue;
+    clip-path: inset(0 -100vmax);
+    margin-bottom: 0.5em;
 }

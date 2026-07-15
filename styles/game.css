@@ -37,3 +37,18 @@ img, video {
     width: auto;
     height: auto;
 }
+
+h2{
+    color: #000030;
+    background: aliceblue;
+    padding: 1rem;
+    box-shadow: 0 0 0 100vmax aliceblue;
+    clip-path: inset(0 -100vmax);
+    margin-bottom: 0.5em;
+}
+
+h3{
+    font-family: 'Consolas', 'Courier New', monospace;
+    text-decoration: underline;
+    margin-top: 2em;
+}
