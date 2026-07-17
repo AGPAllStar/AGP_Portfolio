@@ -16,13 +16,26 @@ article {
 aside {
     text-align: left;
     background-color: #0097b2;
-    color: #000030;
+    color: #000020;
     border: 0.125em solid aliceblue;
     border-radius: 1em;
     padding: 1em;
     box-shadow: 0 1em 2em rgba(0,0,0,0.1);
     grid-column: 2;
     grid-row: 1;
+}
+
+aside a {
+    background-color: #000020;
+    color: aliceblue;
+    border: 0.25em solid aliceblue;
+    border-radius: 5em;
+    padding: 0.5em;
+}
+
+aside a:hover {
+    background: cyan;
+    color: #000020;
 }
 
 section {
@@ -39,7 +52,7 @@ img, video {
 }
 
 h2{
-    color: #000030;
+    color: #000020;
     background: aliceblue;
     padding: 1rem;
     box-shadow: 0 0 0 100vmax aliceblue;
@@ -51,4 +64,24 @@ h3{
     font-family: 'Consolas', 'Courier New', monospace;
     text-decoration: underline;
     margin-top: 2em;
+}
+
+@media (max-width: 800px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    article {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    aside {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    section {
+        grid-column: 1 / -1;
+    }
 }

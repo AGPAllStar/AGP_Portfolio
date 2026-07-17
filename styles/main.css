@@ -1,9 +1,14 @@
 body {
-    background-color: #000030;
+    background-color: #000020;
     color: aliceblue;
     font-family: 'Tahoma', 'Verdana', 'Arial', serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Georgia', 'Palatino', 'Times New Roman', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
