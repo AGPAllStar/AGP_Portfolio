@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Álvaro García Peña" />
+    <meta name="description" content="This page contains a description of the 2D template for Unity" />
+    <meta name="keywords" content="2D, template, unity" />
+    <title>2D Template</title>
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/game.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/carousel.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../media/docs/cv.pdf">CV</a>
+    </nav>
+</header>
+
+<main>
+
+    <article>
+        <div class="carousel">
+            <button class="prev">◀</button>
+
+            <div class="carousel-media">
+                <video autoplay muted playsinline controls class="active">
+                    <source src="../media/video/2DT_reel.mp4" type="video/mp4">
+                    Your navigator doesn't support the video element.
+                </video>
+                <img src="../media/img/2DT_shot1.png" alt="2D Unity Template Shot 1">
+            </div>
+
+            <button class="next">▶</button>
+        </div>
+        <script src="../logic/carousel.js"></script>
+    </article>
+
+    <aside>
+        <h1>2D Unity Template</h1>
+        <p>
+            <ul>
+                <li><b>Genres:</b> Tools</li>
+                <li><b>Engine:</b> Unity 6</li>
+                <li><b>Tasks performed:</b> Programming, System Design, Performance</li>
+            </ul>
+        </p>
+        <p>
+            <a href="#tasks">See my tasks</a>
+        </p>
+    </aside>
+
+    <section>
+        <h2>Tool Description</h2>
+        <p>
+            This is a Unity template for 2D games. This template includes the game’s menu flow, which includes  the main menu, the options menu, the 
+            game screen, the pause screen, a credits screen and a start screen for displaying the team’s logo.
+        </p>
+    </section>
+
+    <section id="tasks">
+        <h2>Tasks performed</h2>
+
+        <article>
+            <h3>Menu flow</h3>
+            <p>
+                I've created a complete menu flow which allows to navigate through a main menu, an options menu, the main game, a pause screen, a credits screen 
+                and a logo screen displayed when the game is started.
+            </p>
+        </article>
+
+        <article>
+            <h3>Full controller support</h3>
+            <p>
+                The template allows player to navigate through game menus by gamepad, keyboard or mouse. This feature was developed through the new Unity Input System, 
+                which allows to change dynamically player input mode and configure it easily.
+            </p>
+        </article>
+
+        <article>
+            <h3>Menu scalability</h3>
+            <p>
+                To create the game menus, I've used the UXML Schema Unity system. This system provides scalability to game menus and makes it easier to edit them.
+            </p>
+        </article>
+
+        <article>
+            <h3>Performance</h3>
+            <p>
+                Game responsabilities were separated in isolated components, each one with its responsability. Game components which are used in all Unity scenes 
+                are retained between scenes using a Singleton pattern.
+            </p>
+        </article>
+    </section>
+
+</main>
+
+<footer>
+    <a href="https://es.linkedin.com/in/álvaro-garcía-peña-060b25382"><img src="../media/img/linkedin_logo.png" alt="Linkedin Logo"></a>
+    <a href="https://agpallstar.itch.io"><img src="../media/img/itchio_logo.png" alt="Itch.io Logo"></a>
+    <a href="https://github.com/AGPAllStar"><img src="../media/img/github_logo.png" alt="Github Logo"></a>
+</footer>
+
+</body>
+</html>

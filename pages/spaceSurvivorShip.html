@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Álvaro García Peña" />
+    <meta name="description" content="This page contains a description of the game Space Survivor Ship" />
+    <meta name="keywords" content="space, ship, asteroid" />
+    <title>Corueconomia</title>
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/game.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/carousel.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../media/docs/cv.pdf">CV</a>
+    </nav>
+</header>
+
+<main>
+
+    <article>
+        <div class="carousel">
+            <button class="prev">◀</button>
+
+            <div class="carousel-media">
+                <img src="../media/img/SSS_shot1.png" alt="Space Survivor Ship Shot 1" class="active">
+                <img src="../media/img/SSS_shot2.png"  alt="Space Survivor Ship Shot 2">
+                <img src="../media/img/SSS_shot3.png"  alt="Space Survivor Ship Shot 3">
+                <img src="../media/img/SSS_shot4.png"  alt="Space Survivor Ship Shot 4">
+            </div>
+
+            <button class="next">▶</button>
+        </div>
+        <script src="../logic/carousel.js"></script>
+    </article>
+
+    <aside>
+        <h1>Space Survivor Ship</h1>
+        <p>
+            <ul>
+                <li><b>Genres:</b> Survival</li>
+                <li><b>Engine:</b> Unity 6</li>
+                <li><b>Tasks performed:</b> Programming, System Design, 2D Art</li>
+            </ul>
+        </p>
+        <p>
+            <a href="#tasks">See my tasks</a>
+            <a href="https://agpallstar.itch.io/space-survivor-ship">Play the demo here</a>
+        </p>
+    </aside>
+
+    <section>
+        <h2>Game Description</h2>
+        <p>
+            This game was created with the <a href="../pages/2dTemplate.html">2D Unity Template</a>.
+        </p>
+        <p>
+            This is a spaceship game where you must survive. You’ll need to destroy as many asteroids as possible to score points. If you get hit 3 times, you lose. 
+            You have 2 weapons in your arsenal: missiles and bombs.
+        </p>
+    </section>
+
+    <section id="tasks">
+        <h2>Tasks performed</h2>
+
+        <article>
+            <h3>System Design</h3>
+            <p>
+                I used the Unity physics system, adjusting the gravity and the items collisions. The game’s logic, what is shown on screen and the player’s controls 
+                have become out of sync.
+            </p>
+        </article>
+
+        <article>
+            <h3>Game Design</h3>
+            <p>
+                I adjusted the asteroid spawn to have always asteroids around. Spaceship speed and inertia force player to be careful not to crash to asteroids.
+            </p>
+        </article>
+
+        <article>
+            <h3>Performance</h3>
+            <p>
+                Asteroids which are too far from player are erased from world so as not to use resources unnecessarily.
+            </p>
+        </article>
+
+        <article>
+            <h3>2D Art</h3>
+            <p>
+                I've created almost all the 2D sprites for the game. I used a pixel art style due to its simplicity.
+            </p>
+        </article>
+    </section>
+
+</main>
+
+<footer>
+    <a href="https://es.linkedin.com/in/álvaro-garcía-peña-060b25382"><img src="../media/img/linkedin_logo.png" alt="Linkedin Logo"></a>
+    <a href="https://agpallstar.itch.io"><img src="../media/img/itchio_logo.png" alt="Itch.io Logo"></a>
+    <a href="https://github.com/AGPAllStar"><img src="../media/img/github_logo.png" alt="Github Logo"></a>
+</footer>
+
+</body>
+</html>

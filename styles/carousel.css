@@ -20,13 +20,12 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgb(64, 0, 255);
-    color: aliceblue;
+    background-color: #5de2c1;
+    color: #000020;
     border: none;
     font-size: 2rem;
     padding: 0.5rem 1rem;
     cursor: pointer;
-    border: 0.125em solid #000030;
     border-radius: 0.5em;
 }
 
@@ -39,6 +38,6 @@
 }
 
 .carousel button:hover {
-    background-color: aliceblue;
-    color: rgb(64, 0, 255);
+    background-color: #000020;
+    color: #5de2c1;
 }

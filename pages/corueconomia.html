@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Álvaro García Peña" />
+    <meta name="description" content="This page contains a description of the game Corueconomia" />
+    <meta name="keywords" content="economy, A Coruña, student, work, event" />
+    <title>Corueconomia</title>
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/game.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/carousel.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../media/docs/cv.pdf">CV</a>
+    </nav>
+</header>
+
+<main>
+
+    <article>
+        <div class="carousel">
+            <button class="prev">◀</button>
+
+            <div class="carousel-media">
+                <img src="../media/img/CEM_shot1.png" alt="Corueconomia Shot 1" class="active">
+                <img src="../media/img/CEM_shot2.png"  alt="Corueconomia Shot 2">
+                <img src="../media/img/CEM_shot3.png"  alt="Corueconomia Shot 3">
+                <img src="../media/img/CEM_shot4.png"  alt="Corueconomia Shot 4">
+            </div>
+
+            <button class="next">▶</button>
+        </div>
+        <script src="../logic/carousel.js"></script>
+    </article>
+
+    <aside>
+        <h1>Corueconomia</h1>
+        <p>
+            <ul>
+                <li><b>Genres:</b> Life Simulation</li>
+                <li><b>Engine:</b> Godot 4.6</li>
+                <li><b>Tasks performed:</b> Programming, System Design, 2D Art</li>
+            </ul>
+        </p>
+        <p>
+            <a href="#tasks">See my tasks</a>
+            <a href="https://agpallstar.itch.io/corueconomia">Play the demo here</a>
+        </p>
+    </aside>
+
+    <section>
+        <h2>Game Description</h2>
+        <p>
+            This game was developed in cooperation with Enxeñeria Sen Fronteiras. The purpose of the game is to teach players about the challenges of surviving 
+            working life in Galicia today.
+        </p>
+        <p>
+            In this game you play the part of a recent university graduate. As a ex-student, you select a work and a flat and you have to survive to modern life.
+            You have to life in A Coruña trying not to run out of money and to keep your mental health, diet, sleep and social status stable.
+        </p>
+        <p>
+            As the days go by, events will occur that will bring about changes in the player’s status. Some will even force the player to make important decisions.
+        </p>
+    </section>
+
+    <section id="tasks">
+        <h2>Tasks performed</h2>
+
+        <article>
+            <h3>Events queue</h3>
+            <p>
+                I developed a system that generates a event list each day of the game. The events generated depend on the weekday and a degree of randomness.
+            </p>
+        </article>
+
+        <article>
+            <h3>Menu flow</h3>
+            <p>
+                I defined the menu flow of the game. You have to select first your flat and work to begin play. Also when the following event is dispatched, 
+                his information is shown on screen with its effects on player.
+            </p>
+        </article>
+
+        <article>
+            <h3>Interface desing</h3>
+            <p>
+                I designed the main HUD of the game, adjusting its components to show de information clearly.
+            </p>
+        </article>
+
+        <article>
+            <h3>2D Art</h3>
+            <p>
+                I've created almost all the 2D sprites for the game. I used a simple style to make it clear what they mean.
+            </p>
+        </article>
+    </section>
+
+</main>
+
+<footer>
+    <a href="https://es.linkedin.com/in/álvaro-garcía-peña-060b25382"><img src="../media/img/linkedin_logo.png" alt="Linkedin Logo"></a>
+    <a href="https://agpallstar.itch.io"><img src="../media/img/itchio_logo.png" alt="Itch.io Logo"></a>
+    <a href="https://github.com/AGPAllStar"><img src="../media/img/github_logo.png" alt="Github Logo"></a>
+</footer>
+
+</body>
+</html>

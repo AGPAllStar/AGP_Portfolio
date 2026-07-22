@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Álvaro García Peña" />
+    <meta name="description" content="This page contains a description of the game Maratontuga" />
+    <meta name="keywords" content="tortoise, hare, race" />
+    <title>Maratontuga</title>
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/game.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/carousel.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../media/docs/cv.pdf">CV</a>
+    </nav>
+</header>
+
+<main>
+
+    <article>
+        <div class="carousel">
+            <button class="prev">◀</button>
+
+            <div class="carousel-media">
+                <video autoplay muted playsinline controls class="active">
+                    <source src="../media/video/MTT_reel.mp4" type="video/mp4">
+                    Your navigator doesn't support the video element.
+                </video>
+                <img src="../media/img/MTT_shot1.png" alt="Splash on Contact Shot 1">
+                <img src="../media/img/MTT_shot2.png"  alt="Splash on Contact Shot 2">
+                <img src="../media/img/MTT_shot3.png"  alt="Splash on Contact Shot 3">
+            </div>
+
+            <button class="next">▶</button>
+        </div>
+        <script src="../logic/carousel.js"></script>
+    </article>
+
+    <aside>
+        <h1>Maratontuga</h1>
+        <p>
+            <ul>
+                <li><b>Genres:</b> Racing, 2D Platformer</li>
+                <li><b>Engine:</b> Godot 4.2</li>
+                <li><b>Tasks performed:</b> Programming, System Design, Level Design</li>
+            </ul>
+        </p>
+        <p>
+            <a href="#tasks">See my tasks</a>
+            <a href="https://agpallstar.itch.io/maratontuga">Play the demo here</a>
+        </p>
+    </aside>
+
+    <section>
+        <h2>Game Description</h2>
+        <p>
+            It's a racing game and a 2D platformer. Try to beat the hare in the 3 races that make up the game to win. If you lose 3 times, the hare will have won.
+        </p>
+        <p>
+            During the races there will be obstacles which you have to jump through. There will be also carrots which will give you a short boost.
+        </p>
+    </section>
+
+    <section id="tasks">
+        <h2>Tasks performed</h2>
+
+        <article>
+            <h3>Items System</h3>
+            <p>
+                I developed the carrots functionality to boost the player for a moment. System is scalable to accommodate any new items that may be developed.
+            </p>
+        </article>
+
+        <article>
+            <h3>Game Physics</h3>
+            <p>
+                I've created the game system physics which involve gravity, jump forces and platforms collisions.
+            </p>
+        </article>
+
+        <article>
+            <h3>Level Design</h3>
+            <p>
+                I designed the third level of the game. The aim was to give more obstacles to jump and give and advantage to the hare.
+            </p>
+        </article>
+    </section>
+
+</main>
+
+<footer>
+    <a href="https://es.linkedin.com/in/álvaro-garcía-peña-060b25382"><img src="../media/img/linkedin_logo.png" alt="Linkedin Logo"></a>
+    <a href="https://agpallstar.itch.io"><img src="../media/img/itchio_logo.png" alt="Itch.io Logo"></a>
+    <a href="https://github.com/AGPAllStar"><img src="../media/img/github_logo.png" alt="Github Logo"></a>
+</footer>
+
+</body>
+</html>

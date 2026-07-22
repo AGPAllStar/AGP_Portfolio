@@ -15,7 +15,7 @@ article {
 
 aside {
     text-align: left;
-    background-color: #0097b2;
+    background-color: aliceblue;
     color: #000020;
     border: 0.125em solid aliceblue;
     border-radius: 1em;
@@ -26,16 +26,43 @@ aside {
 }
 
 aside a {
-    background-color: #000020;
-    color: aliceblue;
-    border: 0.25em solid aliceblue;
-    border-radius: 5em;
-    padding: 0.5em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    padding: 0.9rem 1.8rem;
+    margin-top: 2rem;
+
+    background: #5de2c1;
+    color: #000020;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+
+    border-radius: 3em;
+
+    transition: background 0.2s ease,
+                transform 0.2s ease,
+                box-shadow 0.2s ease;
 }
 
-aside a:hover {
-    background: cyan;
-    color: #000020;
+aside a:hover{
+    transform: translateY(-0.25em);
+    box-shadow: 0 2em 4em rgba(88, 166, 255, .35);
+}
+
+aside a:active{
+    transform: translateY(0);
+}
+
+aside a::after{
+    content: "→";
+    transition: transform .2s ease;
+}
+
+aside a:hover::after{
+    transform: translateX(1em);
 }
 
 section {
@@ -43,6 +70,11 @@ section {
     margin-left: 5%;
     margin-right: 5%;
     grid-column: 1 / -1;
+}
+
+section a {
+    text-decoration: underline;
+    color: yellow;
 }
 
 img, video {
@@ -60,10 +92,35 @@ h2{
     margin-bottom: 0.5em;
 }
 
-h3{
-    font-family: 'Consolas', 'Courier New', monospace;
-    text-decoration: underline;
+#tasks article {
+    background-color: #000020;
+    border-radius: 2em;
+    padding: 2em;
     margin-top: 2em;
+    margin-bottom: 2em;
+    box-shadow: 0 1em 2em rgba(255, 255, 255, 0.08);
+    border-left: 0.25em solid #58a6ff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#tasks article:hover {
+    transform: translateY(-0.25em);
+    box-shadow: 0 2em 4em rgba(255, 255, 255, 0.12);
+}
+
+#tasks article h3 {
+    margin-top: 0;
+    font-size: 1.25rem;
+    padding-bottom: 0.25em;
+}
+
+#tasks article p {
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+#tasks article p:last-child {
+    margin-bottom: 0;
 }
 
 @media (max-width: 800px) {

@@ -55,6 +55,7 @@
             </ul>
         </p>
         <p>
+            <a href="#tasks">See my tasks</a>
             <a href="https://agpallstar.itch.io/splash-on-contact">Play the demo here</a>
         </p>
     </aside>
@@ -80,45 +81,36 @@
     <section id="tasks">
         <h2>Tasks performed</h2>
 
-        <h3>Lead programmer</h3>
-        <p>
-            I was responsible for coordinating the game’s programming team, defining and assigning the tasks required for the game’s development.
-        </p>
+        
+        <article>
+            <h3>Lead programmer</h3>
+            <p>
+                I was responsible for coordinating the game’s programming team, defining and assigning the tasks required for the game’s development.
+            </p>
+        </article>
 
-        <h3>Activity System</h3>
-        <p>
-            I developed a system that allows the gameplay context to be changed dynamically within a single Unreal Engine level. To achieve this, I grouped all the 
-            different gameplay contexts such as battles or dialogues into objects called "activities". Each activity is managed independently, defining the rules
-            that apply, the actions the player can perform, and the information to be displayed on screen. The gameplay engine is responsible for changing the current 
-            activity and saving a reference to that activity.
-        </p>
-        <p>
-            Battles are organised in waves, during which a series of enemies appear at different points in the room. For each enemy that is due to appear, 
-            the enemy type, the time it would take to appear from the start of the wave, and the exact location where it would appear are stored. Until the player 
-            has eliminated all the enemies in a wave, they will not move on to the next one. The battle ends when the final wave is complete.
-        </p>
-        <p>
-            Dialogues are managed by dialogue lines, which display the message spoken by the speaker in the conversation between the characters. The dialogue
-            displays the sprites of two characters, one of whom is the speaker of the current dialogue line.
-        </p>
+        <article>
+            <h3>Activity System</h3>
+            <p>
+                I developed a system that allows the gameplay context to be changed dynamically within a single Unreal Engine level. Each context is managed 
+                independently, defining the rules that apply, the actions the player can perform, and the information to be displayed on screen.
+            </p>
+        </article>
 
-        <h3>Level Design</h3>
-        <p>
-            I designed the level shown in the published demo of the game. The level consists of several interconnected rooms which the player must 
-            explore to find the end of the level and guide Splinter safely there.
-        </p>
-        <p>
-            This is an introductory level designed to teach the player the main mechanics of the game and set the scene for the 
-            game’s story. The layout of the level’s rooms was designed to make it accessible to novice players and engaging for experienced players.
-        </p>
+        <article>
+            <h3>Level Design</h3>
+            <p>
+                I designed the level shown in the published demo of the game. This is an introductory level designed to teach the player the main mechanics of 
+                the game and set the scene for the game’s story.
+            </p>
+        </article>
 
-        <h3>Testing</h3>
-        <p>
-            I have developed tools designed to help ensure the quality of the game. On the one hand, I have created a debug mode that allows you to view 
-            all the main characters’ attributes and the collisions of the elements that make up the map while the game is in progress. On the other hand, I 
-            have created a way of saving players’ games to a file so that they can be analysed later. The aim of this is to identify areas 
-            where the level could be improved.
-        </p>
+        <article>
+            <h3>Testing</h3>
+            <p>
+                I have developed tools designed to help ensure the quality of the game, such us a debug mode and a log system.
+            </p>
+        </article>
     </section>
 
 </main>

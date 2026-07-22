@@ -1,5 +1,5 @@
 header {
-    background-color: #000020;
+    background-color: #0d1117;
     top: 0;
     width: 100%;
     height: 3%;
@@ -20,14 +20,11 @@ header a {
     padding-bottom: 0.5em;
     font: larger;
     text-align: center;
-    margin: 5em;
-    border: 0.0625em solid aliceblue;
-    border-radius: 5em;
+    margin: 2em;
 }
 
 header a:hover {
-    background: cyan;
-    color: #000020;
+    color: #5de2c1;
 }
 
 main {
